@@ -1,5 +1,3 @@
-// https://eth-ropsten.alchemyapi.io/v2/Us48v0peDauzSyribVGdIuA9YnFUFtnz
-
 require('@nomiclabs/hardhat-waffle');
 const dotenv = require('dotenv');
 dotenv.config();
