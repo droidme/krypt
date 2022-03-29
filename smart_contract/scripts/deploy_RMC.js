@@ -1,5 +1,5 @@
 const hre = require("hardhat");
-const INITIAL_SUPPLY = 1000;
+const INITIAL_SUPPLY = 100;
 
 const deploy = async () => {
   const RMC = await hre.ethers.getContractFactory("MyToken");
