@@ -1,11 +1,11 @@
 const hre = require("hardhat");
-const INITIAL_SUPPLY = 100;
+const INITIAL_SUPPLY = 1000;
 
 const deploy = async () => {
-  const RMC = await hre.ethers.getContractFactory("MyFirstToken");
-  const token = await RMC.deploy(INITIAL_SUPPLY);
+  const TFT = await hre.ethers.getContractFactory("MyToken");
+  const token = await TFT.deploy(INITIAL_SUPPLY);
   await token.deployed();
-  console.log("RMC successfully deployed to:", token.address);
+  console.log("TFT successfully deployed to:", token.address);
 }
 
 
